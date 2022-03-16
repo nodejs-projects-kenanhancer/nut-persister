@@ -1,0 +1,67 @@
+{
+  "name": "nut-persister",
+  "version": "1.0.5",
+  "description": "a very simple repository manager",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "webpack",
+    "predeploy": "npm install && NODE_ENV=production npm run build",
+    "deploy": "npm publish"
+  },
+  "pre-commit": [
+    "test:coverage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs-projects-kenanhancer/nut-persister.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "node",
+    "nodejs",
+    "node.js",
+    "framework",
+    "api",
+    "middleware",
+    "lambda",
+    "aws",
+    "azure",
+    "microsoft",
+    "amazon"
+  ],
+  "author": {
+    "email": "kenanhancer@gmail.com",
+    "name": "Kenan Hancer",
+    "url": "http://kenanhancer.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodejs-projects-kenanhancer/nut-persister/issues"
+  },
+  "homepage": "https://github.com/nodejs-projects-kenanhancer/nut-persister#readme",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/uuid": "^8.3.4",
+    "copy-webpack-plugin": "^10.2.4",
+    "jest": "^27.5.1",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "uuid": "^8.3.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

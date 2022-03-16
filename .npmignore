@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+src/
+test/
+images/
+index.ts
+jest.config.js
+tsconfig.json
+createNpmrc.sh
+webpack.config.js
+tests/
